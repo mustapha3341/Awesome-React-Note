@@ -1,4 +1,4 @@
-# Awesome React Note Takinn Application
+# Awesome React Note Taking Application
 ========================================
 ## Features 
 - User can create new note
