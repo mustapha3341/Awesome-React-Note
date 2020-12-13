@@ -8,10 +8,13 @@ const Test = () => {
 
     const getNotes = () => {
         const { db } = firebase;
-        db.collection("Notes").get().then(querySnapshot => {
-            querySnapshot.forEach(doc => {
-                console.log(doc.data());
+        db.collection("Notes").onSnapshot(querySnapshot => {
+            const notes = querySnapshot.docs.map(_doc => {
+                const data = _doc.data();
+                data.id = _doc.id
+                return data
             })
+            console.log(notes);
         })
     }
 
