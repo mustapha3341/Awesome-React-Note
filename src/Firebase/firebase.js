@@ -1,4 +1,6 @@
 import firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/auth";
 
 var firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -12,6 +14,8 @@ var firebaseConfig = {
 class Firebase {
     constructor() {
         firebase.initializeApp(firebaseConfig);
+        this.db = firebase.firestore();
+        this.auth = firebase.auth();
     }
 }
 
