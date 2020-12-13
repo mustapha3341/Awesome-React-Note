@@ -1,10 +1,18 @@
 import firebase from "firebase/app";
 
 var firebaseConfig = {
-    apiKey: "AIzaSyA750qcmFW1_OCq1bgLPRQ546m1S2wT7BE",
-    authDomain: "awesome-note-app-22f7f.firebaseapp.com",
-    projectId: "awesome-note-app-22f7f",
-    storageBucket: "awesome-note-app-22f7f.appspot.com",
-    messagingSenderId: "947207950202",
-    appId: "1:947207950202:web:916d663f7258f1e2a650c3",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
 };
+
+class Firebase {
+    constructor() {
+        firebase.initializeApp(firebaseConfig);
+    }
+}
+
+export default Firebase;
