@@ -1,0 +1,7 @@
+.editor--dropdown {
+    padding: .65em 1em;
+    border: 1px solid #4E62C7;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}

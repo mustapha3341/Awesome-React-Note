@@ -1,10 +1,13 @@
 import React from "react";
 import "./Main.css";
+import Navbar from "../Navbar/Navbar";
+import NoteEditor from "../Editor/NoteEditor";
 
 const Main = () => {
     return (
         <div className="main--area">
-            <h2>Main Content</h2>
+            <Navbar />
+            <NoteEditor />
         </div>
     );
 };

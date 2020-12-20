@@ -1,5 +1,5 @@
 .sidebar {
-    width: 16em;
+    width: 16.5em;
     height: 100%;
     /* padding: 1em 0; */
     background: rgba(183, 195, 255, 0.6);
@@ -23,6 +23,21 @@
     width: 100%;
     display: grid;
     gap: 0.5em;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-slider-thumb {
+    border-radius: 5px;
+    background-color: #4E62C7;
 }
 
 .note {
@@ -33,7 +48,7 @@
 }
 
 .note.active {
-    background: whitesmoke;
+    background: white;
 }
 
 .note--heading {

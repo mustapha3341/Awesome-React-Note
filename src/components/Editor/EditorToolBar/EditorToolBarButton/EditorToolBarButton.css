@@ -1,0 +1,16 @@
+.editor--toolbar-btn {
+    padding: .65em 1em;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background: #4E62C7;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    font-size: 1.2rem;
+}

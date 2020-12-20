@@ -1,0 +1,11 @@
+.editor--toolbar {
+    padding: 1em;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.editor--toolbar > * + * {
+    margin-left: 1em;
+}
